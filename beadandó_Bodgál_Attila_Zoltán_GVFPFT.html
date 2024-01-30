@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="Scripts.js"></script>
+        
+        <Style>
+            h1{
+                color: white;
+                text-align: center;
+            }
+
+            h3{
+                text-align: right;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            table,th,tr{
+              text-align: center;
+              margin-left: auto;
+              margin-right: auto;
+            } 
+
+            p {
+              color: white;
+            }
+
+            .centerAligment {
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translate(-50%,-50%);
+              transform: translate(-50%,-50%);
+              text-align: center;
+            }
+
+            body {
+              background-image: url("DnD_Tavern.jpg");
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+              
+            }
+        </Style>
+    </head>
+    <body>
+
+      <div id="CharacterCreator" style="display: block" class = "centerAligment">
+        <h1>CREATE YOUR OWN CHARACTER</h1>
+        <p>Enter your character name</p>
+        <input type="text" id="Icname" name="Icname" value="Zarun Madone">
+        <p>Choose your Race</p>
+        <select id="races" name="races" size="1">
+            <option value="dragonborn">Dragonborn</option>
+            <option value="dwarf">Dwarf</option>
+            <option value="elf">Elf</option>
+            <option value="gnome">Gnome</option>
+            <option value="half-elf">Half-Elf</option>
+            <option value="half-orc">Half-Orc</option>
+            <option value="halfling">Halfling</option>
+            <option value="human">Human</option>
+            <option value="tiefling">Tiefling</option>
+          </select><br>
+        <p>Choose your class and level</p>
+        <select id="classes" name="classes" size="1"> 
+            <option value="artificer">Artificer</option>
+            <option value="barbarian">Barbarian</option>
+            <option value="bard">Bard</option>
+            <option value="cleric">Cleric</option>
+            <option value="druid">Druid</option>
+            <option value="fighter">Fighter</option>
+            <option value="monk">Monk</option>
+            <option value="paladin">Paladin</option>
+            <option value="ranger">Ranger</option>
+            <option value="rogue">Rogue</option>
+            <option value="sorcerer">Sorcerer</option>
+            <option value="warlock">Warlock</option>
+            <option value="wizard">Wizard</option>
+          </select>
+          <select id="level" name="level" size="1">
+            <option value="1">lvl 1</option>
+            <option value="2">lvl 2</option>
+            <option value=3>lvl 3</option>
+            <option value=4>lvl 4</option>
+            <option value=5>lvl 5</option>
+            <option value=6>lvl 6</option>
+            <option value=7>lvl 7</option>
+            <option value=8>lvl 8</option>
+            <option value=9>lvl 9</option>
+            <option value=10>lvl 10</option>
+            <option value=11>lvl 11</option>
+            <option value=12>lvl 12</option>
+            <option value=13>lvl 13</option>
+            <option value=14>lvl 14</option>
+            <option value=15>lvl 15</option>
+            <option value=16>lvl 16</option>
+            <option value=17>lvl 17</option>
+            <option value=18>lvl 18</option>
+            <option value=19>lvl 19</option>
+            <option value=20>lvl 20</option>
+          </select><br>
+
+          <p>Enter your stats</p>
+          <table>
+            <tr>
+              <th>
+                <p>STR</p>
+              </th>
+              <th>
+                <p>DEX</p>
+              </th>
+              <th>
+                <p>CON</p>
+              </th>
+              <th>
+                <p>INT</p>
+              </th>
+              <th>
+                <p>WIS</p>
+              </th>
+              <th>
+                <p>CHA</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <select name="Strenght" id="Strenght">
+                  <option value=1>1</option>
+                  <option value=2>2</option>
+                  <option value=3>3</option>
+                  <option value=4>4</option>
+                  <option value=5>5</option>
+                  <option value=6>6</option>
+                  <option value=7>7</option>
+                  <option value=8>8</option>
+                  <option value=9>9</option>
+                  <option value=10 selected>10</option>
+                  <option value=11>11</option>
+                  <option value=12>12</option>
+                  <option value=13>13</option>
+                  <option value=14>14</option>
+                  <option value=15>15</option>
+                  <option value=16>16</option>
+                  <option value=17>17</option>
+                  <option value=18>18</option>
+                  <option value=19>19</option>
+                  <option value=20>20</option>
+                </select>
+              </th>
+              <th>
+                <select name="Dexterity" id="Dexterity">
+                  <option value=1>1</option>
+                  <option value=2>2</option>
+                  <option value=3>3</option>
+                  <option value=4>4</option>
+                  <option value=5>5</option>
+                  <option value=6>6</option>
+                  <option value=7>7</option>
+                  <option value=8>8</option>
+                  <option value=9>9</option>
+                  <option value=10 selected>10</option>
+                  <option value=11>11</option>
+                  <option value=12>12</option>
+                  <option value=13>13</option>
+                  <option value=14>14</option>
+                  <option value=15>15</option>
+                  <option value=16>16</option>
+                  <option value=17>17</option>
+                  <option value=18>18</option>
+                  <option value=19>19</option>
+                  <option value=20>20</option>
+                </select>
+              </th>
+              <th>
+                <select name="Constitution" id="Constitution">
+                  <option value=1>1</option>
+                  <option value=2>2</option>
+                  <option value=3>3</option>
+                  <option value=4>4</option>
+                  <option value=5>5</option>
+                  <option value=6>6</option>
+                  <option value=7>7</option>
+                  <option value=8>8</option>
+                  <option value=9>9</option>
+                  <option value=10 selected>10</option>
+                  <option value=11>11</option>
+                  <option value=12>12</option>
+                  <option value=13>13</option>
+                  <option value=14>14</option>
+                  <option value=15>15</option>
+                  <option value=16>16</option>
+                  <option value=17>17</option>
+                  <option value=18>18</option>
+                  <option value=19>19</option>
+                  <option value=20>20</option>
+                </select>
+              </th>
+              <th>
+                <select name="Intelligence" id="Intelligence">
+                  <option value=1>1</option>
+                  <option value=2>2</option>
+                  <option value=3>3</option>
+                  <option value=4>4</option>
+                  <option value=5>5</option>
+                  <option value=6>6</option>
+                  <option value=7>7</option>
+                  <option value=8>8</option>
+                  <option value=9>9</option>
+                  <option value=10 selected>10</option>
+                  <option value=11>11</option>
+                  <option value=12>12</option>
+                  <option value=13>13</option>
+                  <option value=14>14</option>
+                  <option value=15>15</option>
+                  <option value=16>16</option>
+                  <option value=17>17</option>
+                  <option value=18>18</option>
+                  <option value=19>19</option>
+                  <option value=20>20</option>
+                </select>
+              </th>
+              <th>
+                <select name="Wisdom" id="Wisdom">
+                  <option value=1>1</option>
+                  <option value=2>2</option>
+                  <option value=3>3</option>
+                  <option value=4>4</option>
+                  <option value=5>5</option>
+                  <option value=6>6</option>
+                  <option value=7>7</option>
+                  <option value=8>8</option>
+                  <option value=9>9</option>
+                  <option value=10 selected>10</option>
+                  <option value=11>11</option>
+                  <option value=12>12</option>
+                  <option value=13>13</option>
+                  <option value=14>14</option>
+                  <option value=15>15</option>
+                  <option value=16>16</option>
+                  <option value=17>17</option>
+                  <option value=18>18</option>
+                  <option value=19>19</option>
+                  <option value=20>20</option>
+                </select>
+              </th>
+              <th>
+                <select name="Charisma" id="Charisma">
+                  <option value=1>1</option>
+                  <option value=2>2</option>
+                  <option value=3>3</option>
+                  <option value=4>4</option>
+                  <option value=5>5</option>
+                  <option value=6>6</option>
+                  <option value=7>7</option>
+                  <option value=8>8</option>
+                  <option value=9>9</option>
+                  <option value=10 selected>10</option>
+                  <option value=11>11</option>
+                  <option value=12>12</option>
+                  <option value=13>13</option>
+                  <option value=14>14</option>
+                  <option value=15>15</option>
+                  <option value=16>16</option>
+                  <option value=17>17</option>
+                  <option value=18>18</option>
+                  <option value=19>19</option>
+                  <option value=20>20</option>
+                </select>
+              </th>
+            </tr>
+
+          </table>
+          <p>Select hp by leveling</p>
+          <select id="average" name="average" size="1">
+            <option value=true>Taking average</option>
+            <option value=false>Rolling for numbers</option>
+          </select><br><br>
+          <button type="button" id="addTo" onclick="addCharacter()">Store the current Character</button>
+          <button type="button" id="LoadIn" onclick="SwitchSelecToCreateOrViseversa()">Load in a Character</button>
+          <p id="CurrentlyLoaded"></p>
+        </div>
+        <div id="CharacterSelector" style="display: none" class="centerAligment">
+            <Select id="CharacterSelection" size="1"></Select>
+            <button type="button" id="Load" onclick="readInCharacter()">Load choosen Character</button>
+            <button type="button" id="Switch" onclick="SwitchSelecToCreateOrViseversa()">Switch back</button>
+            <br></br>
+            <p id="characterDescP"></p>
+        </div>
+    </body>
+</html>
